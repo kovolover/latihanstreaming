@@ -1,0 +1,27 @@
+name: FFMPEG 2
+
+on:
+  workflow_dispatch:
+    inputs:
+      ffmpegcom:
+        description: 'Command ffmpeg'
+        required: true
+
+jobs:
+  live-streaming:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: install ffmpeg
+        run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg7 -y > /dev/null;sudo apt update -qq > /dev/null;sudo apt install ffmpeg -y -qq > /dev/null
+      - name: live stream
+        run: 
+          #!/bin/bash
+          # Script Bash untuk menjalankan FFmpeg dan memantau statusnya
+          while true; do
+            ${{ github.event.inputs.ffmpegcom }}
+            if [ $? -ne 0 ]; then
+              echo "FFmpeg stopped. Restarting..."
+              sleep 5
+            fi
+          done
