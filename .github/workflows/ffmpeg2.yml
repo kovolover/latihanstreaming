@@ -19,7 +19,7 @@ jobs:
           #!/bin/bash
           # Script Bash untuk menjalankan FFmpeg dan memantau statusnya
           while true; do
-            ${{ github.event.inputs.ffmpegcom }}
+            ${{ github.event.inputs.ffmpegcom }};
             if [ $? -ne 0 ]; then
               echo "FFmpeg stopped. Restarting..."
               sleep 5
