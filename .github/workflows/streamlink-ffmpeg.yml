@@ -17,7 +17,7 @@ jobs:
       - name: install ffmpeg
         run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg7 -y > /dev/null;sudo apt update -qq > /dev/null;sudo apt install ffmpeg -y -qq > /dev/null
       - name: Get Stream URL
-        run: |
+        run: 
             stream_url=$(streamlink https://www.youtube.com/watch?v=BCJnqijZpEE best --stream-url)
             echo "Stream URL: $stream_url"
 	          ffmpeg -i $stream_url
