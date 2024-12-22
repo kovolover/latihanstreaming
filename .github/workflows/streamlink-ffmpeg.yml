@@ -1,4 +1,4 @@
-name: streamlink-FFMPEG7
+name: streamlink
 
 on:
   workflow_dispatch:
@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: install streamlink
         run: sudo pip3 install streamlink
-      - name: install ffmpeg
-        run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg7 -y > /dev/null;sudo apt update -qq > /dev/null;sudo apt install ffmpeg -y -qq > /dev/null
-      - name: live stream
+      - name: run command
         shell: bash
         run: ${{ github.event.inputs.ffmpegcom }}
