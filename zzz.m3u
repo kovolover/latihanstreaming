@@ -1,0 +1,16 @@
+#EXTM3U
+
+#EXTINF:-1 group-title="VOLLEY PROLIGA" tvg-id="MOJI.id" tvg-logo="https://thumbor.prod.vidiocdn.com/QCM-BPpNeM9_gDgn5eKv8nrjVUI=/960x576/filters:quality(75)/vidio-web-prod-headline/uploads/headline/mobile_image/28157/pertamina-enduro-vs-yogya-falcons-5e8a09.jpg",14:00 Pertamina Enduro VS Yogya Falcons
+#EXTVLCOPT:http-referrer=https://m.vidio.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36
+https://etslive-v3-vidio-com-tokenized.akamaized.net/live/18234/master.m3u8?hdnts=exp=1737282948~acl=/live/18234/master.m3u8!/hls-p/ingest_18234*/*!/hls-b/ingest_18234*/*~id=175769870~hmac=74190676fca9ba2c0784e6c24a622d438e7cd13612dcd14a88c2ed2a063dab95
+
+#EXTINF:-1 group-title="VOLLEY PROLIGA" tvg-id="MOJI.id" tvg-logo="https://thumbor.prod.vidiocdn.com/DsflQ1uTvJq2HsP5OeXRsHgtFLg=/960x576/filters:quality(75)/vidio-web-prod-headline/uploads/headline/mobile_image/28159/electric-pln-vs-livin-mandiri-a66caa.jpg",16:30 Electric PLN VS Livin Mandiri
+#EXTVLCOPT:http-referrer=https://m.vidio.com
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Mobile Safari/537.36
+https://etslive-v3-vidio-com-tokenized.akamaized.net/live/18234/master.m3u8?hdnts=exp=1737292007~acl=/live/18234/master.m3u8!/hls-p/ingest_18234*/*!/hls-b/ingest_18234*/*~id=175769870~hmac=bc4a9c689a9de5d3e676f3f9d7e861f33c47cfbf457ab3f14a71bd6769592fbe
+
+#EXTINF:-1 tvg-id="MNCTV - [Channel 82].id" tvg-url="https://www.bevy.be/bevyfiles/indonesia4.xml" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/6/69/MNCTV_logo.png" group-title="Indonesia Channels",MNC TV
+#EXTVLCOPT:http-referrer=https://www.rctiplus.com
+#EXTVLCOPT:http-user-agent=android-R+
+https://rplus.xyssatu.workers.dev/xPLAY.m3u8?id=mnc
