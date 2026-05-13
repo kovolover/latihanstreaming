@@ -12,7 +12,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: add repo
+        run: sudo add-apt-repository ppa:ubuntuhandbook1/ffmpeg8 -y > /dev/null
+      - name: apt update
+        run: sudo apt update -qq > /dev/null
       - name: install ffmpeg
-        run: sudo apt install ffmpeg -y -qq > /dev/null
+        run: sudo apt install ffmpeg -y -qq > /dev/null  
       - name: live stream
         run: ${{ github.event.inputs.ffmpegcom }}
